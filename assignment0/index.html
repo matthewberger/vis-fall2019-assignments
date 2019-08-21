@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>Assignment 0 - Survey!</title>
+		<script type='text/javascript' src='../d3.js'></script>
+	</head>
+	<body>
+		<script type='text/javascript'>
+
+			// TODO: fill in the a's! Remember to use the escape character ('\') prior to any special characters
+			var q1 = 'What would you like to get out of this course?'
+			var a1 = ''
+			var q2 = 'What are your research interests?'
+			var a2 = ''
+			var q3 = 'What is your experience with web development?'
+			var a3 = ''
+			var q4 = 'What is your experience with D3?'
+			var a4 = ''
+			var q5 = 'Have you used visualization tools and libraries before, such as Tableau, matplotlib, ggplot2, etc..?'
+			var a5 = ''
+			var qs_and_as = [{'statement_type':'question','value':q1},{'statement_type':'answer','value':a1},
+								  {'statement_type':'question','value':q2},{'statement_type':'answer','value':a2},
+								  {'statement_type':'question','value':q3},{'statement_type':'answer','value':a3},
+								  {'statement_type':'question','value':q4},{'statement_type':'answer','value':a4},
+								  {'statement_type':'question','value':q5},{'statement_type':'answer','value':a5}];
+
+			d3.select('body').selectAll('p').data(qs_and_as)
+				.enter()
+				.append('p')
+				.text(d => (d.statement_type=='question' ? 'Q: '+d.value : 'A: '+d.value))
+				.attr('class', d => d.statement_type)
+				.style('color', 'black')
+				.style('font-size', '20px')
+
+		</script>
+	</body>
+</html>
