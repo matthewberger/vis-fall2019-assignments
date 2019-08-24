@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>Assignment 1 - Populating the DOM with graphical marks</title>
+		<script type='text/javascript' src='../d3.js'></script>
+	</head>
+	<body>
+	<svg width='600' height='800'></svg>
+	<script type='text/javascript' src='assignment1.js'></script>
+	<script type='text/javascript'>
+		d3.json('circles.json')
+		  .then(function(data)  {
+			  points_data = data;
+			  return d3.json('bars.json');
+		  }).then(function(data)  {
+			  bars_data = data;
+			  return d3.json('boxes.json');
+		  }).then(function(data)  {
+			  boxes_data = data;
+			  plot_it();
+		  });
+	</script>
+	</body>
+</html>
