@@ -10,6 +10,8 @@
 
 This assignment is about the most basic technique for designing data visualizations: using the 2D plane to position graphical marks. Provided is a dataset consisting of a list of **point** marks, and a list of **bar** marks. Each of these lists contains their _2D positions_, relative to pre-specified **group elements** that already exist in the DOM, in addition to other attributes specific to the mark, namely the _radius_ and _fill color_ for points, and the _width_, _height_, and _fill color_ for bars.
 
+Similar to Assignment 0, you should first run a local server at the top-level directory (e.g. vis-fall2019-assignments), and then you can point your browser to [http://localhost:8000/assignment1](http://localhost:8000/assignment1).
+
 You will work in `assignment1.js`. Within `index.html`, point and bar marks will be read in as arrays `points_data` and `bars_data`, respectively. The function `plot_it` is what will be executed from `index.html`. In this function, you will be expected to populate the DOM from the given data, using helper functions that have been provided, and filling in TODO stubs placed for guidance.
 
 More specifically, you will create [SVG circle elements](https://www.w3schools.com/graphics/svg_circle.asp) for point marks, and [SVG rectangle elements](https://www.w3schools.com/graphics/svg_rect.asp) for bar marks. This requires the following:
@@ -51,6 +53,12 @@ To create an [SVG line element](https://www.w3schools.com/graphics/svg_line.asp)
 * _y2_: the y-coordinate of the ending position
 * _stroke_: the stroke color of the line
 * _stroke-width_: the line thickness
+
+## Reference Image
+
+Your visualization should be _identical_ to the following image (the box plot is shown in the lower right, and is optional for undergraduates):
+
+![alt text](https://github.com/matthewberger/vis-fall2019-assignments/blob/master/assignment1/reference.png "Target Visualization")
 
 ## Undergraduate Grading Criteria
 
