@@ -60,6 +60,10 @@ Your visualization should be _identical_ to the following image (the box plot is
 
 ![alt text](https://github.com/matthewberger/vis-fall2019-assignments/blob/master/assignment1/reference.png "Target Visualization")
 
+## Submission
+
+Please zip up the folder for this assignment, name it `last_name`-`first_name`-assignment1.zip, where `last_name` and `first_name` should be replaced with your last and first name, respectively, and submit it to Brightspace.
+
 ## Undergraduate Grading Criteria
 
 * Scatterplot (50%)
