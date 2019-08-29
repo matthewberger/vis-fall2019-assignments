@@ -4,7 +4,7 @@ function create_dom_element(element_name)  {
 }
 
 function get_single_element_by_name(element_name)  {
-	return document.getElementsByTagName('svg')[0];
+	return document.getElementsByTagName(element_name)[0];
 }
 
 // TODO: create and return a `circle` element, whose attributes are set based on the `circle_datum` argument.
