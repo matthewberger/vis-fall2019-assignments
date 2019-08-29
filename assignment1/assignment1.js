@@ -56,7 +56,7 @@ function plot_it()  {
 	svg_element.appendChild(bar_group);
 	svg_element.appendChild(box_group);
 
-	// TODO: for each object of `points_data`, create a circle SVG element, set the element's attributes, and add the circle element as a child of `circle_group`
+	// TODO: for each object of `points_data`, create a circle SVG element, set the element's attributes, and add the circle element as a child of `point_group`
 	// STRONG HINT: you should implement `create_circle_element` above to create a circle element and populate its attributes
 
 	// TODO: for each object of `bars_data`, create a rect SVG element, set the element's attributes, and add the rect element as a child of `rect_group`
