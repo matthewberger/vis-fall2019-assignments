@@ -69,6 +69,8 @@ We will turn to our other visual channels, and map `wind` to **size**, namely th
 
 Please zip up the folder for this assignment, name it `last_name`-`first_name`-assignment2.zip, where `last_name` and `first_name` should be replaced with your last and first name, respectively, and submit it to Brightspace.
 
+The assignment is due September 9, 11:59:59 PM.
+
 ## Undergraduate Grading Criteria
 
 * Scales (20%)
