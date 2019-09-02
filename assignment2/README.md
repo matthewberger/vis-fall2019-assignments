@@ -65,6 +65,10 @@ We will turn to our other visual channels, and map `wind` to **size**, namely th
 * Computing the height for a bar is a bit tricky: you need to know the _minimum_ of the range to compute the appropriate difference. Also be aware of the above point...
 * Computing minima and maxima from specific fields from objects in an array can be easily accomplished with D3 using [min](https://github.com/d3/d3-array#min) and [max](https://github.com/d3/d3-array#max), respectively, or both with one call using [extent](https://github.com/d3/d3-array#extent). You also need a way to extract all unique strings from `weather`, and set them in an array to construct our ordinal scale (we tend to treat nominal data as ordinal when encoding with space, not without its issues).
 
+## Submission
+
+Please zip up the folder for this assignment, name it `last_name`-`first_name`-assignment2.zip, where `last_name` and `first_name` should be replaced with your last and first name, respectively, and submit it to Brightspace.
+
 ## Undergraduate Grading Criteria
 
 * Scales (20%)
