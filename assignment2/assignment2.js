@@ -29,7 +29,7 @@ function create_sized_circle_element(temp_datum, scale_x, scale_y, scale_r)  {
 // `temp`: the expected temperature for the weather
 // You should use `scale_x` to compute the x coordinate and width given `weather, and `scale_y` to compute the y coordinate and height given `temp`
 // Furthermore, set the 'fill' attribute of the circle to '#555'
-function create_rect_element(weather_datum, min_weather_value, scale_x, scale_y)  {
+function create_rect_element(weather_datum, scale_x, scale_y)  {
 }
 
 function scaleLinear()  {
