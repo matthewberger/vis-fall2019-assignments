@@ -128,7 +128,7 @@ function plot_it()  {
 
 	// TODO: for the weather data (weather_data), extract the names of the different types of weather, compute the maximum over all temperatures, and
 	// construct scales accordingly - a band scale for `weather`, and a linear scale for `temp`
-	// NOTE: since we are using bar marks, for the y scale, set the domain minimum for weather to be 0
+	// NOTE: since we are using bar marks, for the y scale, set the domain minimum to be 0
 
 	// TODO: create circle marks for `temp_data` using the scales you constructed above, producing a scatterplot - add all marks to `temp_group`
 	// NOTE: if mapping wind to radius, then use `create_sized_circle_element` ONLY; otherwise, use `create_circle_element`
