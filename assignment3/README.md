@@ -48,7 +48,7 @@ Note: the scale computed for `wind` can be shared between the two plots.
 
 To create the scatterplot, first, you should create a rectangle that fills up the entire spatial range of the plot. This will help make clear the spatial area in which our scatterplot resides.
 
-After this, perform a data join on `seattle_data` to create `circle` elements for each item in `seattle_data`, using the scales that you previously constructed to position the points and set the circle radii. You should, additionally, set the circle's `fill` (color) and `opacity` (value from [0,1]) to constant values that will help in reading the visualization.
+After this, perform a data join on `seattle_data` to create `circle` elements for each item in `seattle_data`, using the scales that you previously constructed to position the points and set the circle radii. You should, additionally, set the circle's `fill` (color) and `opacity` (value from [0,1]) to constant values that will help in reading the visualization. **Note**: make sure that your circles are contained completely within the plot -- you may find it useful to expand the domain in your positional scales a bit to achieve this.
 
 Next, you should plot your scales. This should correspond to a `d3.axisBottom` for your x scale, and `d3.axisLeft` for your y scale. You should first add a group element to the plot, set an attribute "transform" with an appropriate translation, and then finally, use `call` to generate elements for the scale's axis.
 
