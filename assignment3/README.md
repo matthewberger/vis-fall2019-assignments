@@ -76,7 +76,7 @@ You will also create a band scale for month, in positioning the bars along the x
 
 The quantitative scale that you used in the scatterplot for temperature may be used here as well.
 
-You will then perform a data join on this nest object, creating `rect` elements, where the `y` attribute should be the average high, and the height should correspond to the difference between the average high and average low.
+You will then perform a data join on this nest object, creating `rect` elements, where the `y` attribute should be the average low (the bottom of the bar), and the height should correspond to the difference between the average high and average low.
 
 Last, you should plot your scales and label your axes, in a similar manner as above, corresponding to a `d3.axisBottom` and `d3.axisLeft`.
 
