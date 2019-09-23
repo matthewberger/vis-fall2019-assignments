@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>Assignment 4 - Stacked and Diverging Bar Plot</title>
+		<script type='text/javascript' src='../d3.js'></script>
+	</head>
+	<body>
+	<script type='text/javascript' src='assignment4.js'></script>
+	<script type='text/javascript'>
+		d3.csv('nba_players.csv')
+		  .then(function(data)  {
+			  nba_data = data;
+			  plot_it();
+		  })
+	</script>
+	</body>
+</html>
