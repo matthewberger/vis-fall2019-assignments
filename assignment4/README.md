@@ -27,7 +27,7 @@ Your objective is to produce a stacked and diverging bar plot, where the above a
 * 'Activities': this groups the 'Block', 'Assist', and 'Steal' attributes
 * 'Points': this groups the 'Two_Points' and 'Three_Points' attributes
 
-Bars will be horizontally aligned, and consequently, the visualization should show one player per row. In each row, bars corresponding to the 'Activities' group should be stacked going from right-to-left, and bars corresponding to the 'Points' group should be stacked going from left-to-right. Specifically, 'Block' and 'Two Pointer' should share a common baseline.
+Bars will be horizontally aligned, and consequently, the visualization should show one player per row. In each row, bars corresponding to the 'Activities' group should be stacked going from right-to-left, and bars corresponding to the 'Points' group should be stacked going from left-to-right. Specifically, 'Block' and 'Two_Points' should share a common baseline.
 
 In addition, you will encode 'Salary' with a bar that is aligned to the left, shown as semi-transparent in the background of the player name.
 
