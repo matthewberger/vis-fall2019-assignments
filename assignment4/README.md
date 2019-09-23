@@ -86,7 +86,7 @@ You will last create stacked bar elements for the Activities group of attributes
 
 You should also set the fill of each bar to its appropriate color, based on the specific attribute (`Two_Points`, `Three_Points`).
 
-## Undergraduate Extra Credit (5 points) / Graduate Student Requirement
+## Extra Credit (5 points)
 
 As described above, bars will be produced where adjacent bars will be right next to each other. This is not the most effective way to visually convey the different attribute types. Recall the Gestalt law of Enclosure: we have the ability to distinguish visual elements through boundary cues, even boundaries that are incomplete. To take advantage of this property, what we may do is insert a small amount of **padding** between bars, so that the boundary of a bar is more distinct.
 
@@ -99,6 +99,26 @@ Due to the nature of stacking, this is a bit more nontrivial than you might thin
 * Note what is returned by `d3.stack`: a `key` property for each of the data attributes, as well as `data` property for each player. You will need to access these properties when setting the attributes of your marks.
 * You might find that setting the bar colors is a bit tricky. However, recall that we are creating a group element for each attribute, and that group elements can be used for more than just transformations - any attribute set on a group element _propagates_ to the children...
 
-## Undergraduate Grading Criteria
+## Submission
 
-## Graduate Student Grading Criteria
+Please zip up the folder for this assignment, name it `last_name`-`first_name`-assignment4.zip, where `last_name` and `first_name` should be replaced with your last and first name, respectively, and submit it to Brightspace.
+
+The assignment is due October 4, 11:59:59 PM.
+
+## Grading Criteria
+
+* Correctly creating and setting up scales (10%)
+* Correctly stacking data (both stacks) (10%)
+* Proper color design for individual attributes (10%)
+* Visualization of player names and salaries (20%)
+	* Properly creating and setting text elements that displays names (5%)
+	* Populating rectangles that span the full width of the plot, alternating in color (5%)
+	* Visually encoding player salary bars (10%)
+* Diverging and stacked bars for Points (25%)
+	* Nested data join to create rectangles (5%)
+	* Using the stack data to set rectangle geometry (15%)
+	* Properly setting color for each bar (5%)
+* Diverging and stacked bars for Activities (25%)
+	* Nested data join to create rectangles (5%)
+	* Using the stack data to set rectangle geometry (15%)
+	* Properly setting color for each bar (5%)
