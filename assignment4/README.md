@@ -55,7 +55,7 @@ You will next need to use [d3.stack](https://github.com/d3/d3-shape#stacks) to d
 
 It is recommended to inspect the data structure returned by stacking in the console, so that you can be confident about its format.
 
-Note that stack will simply accumulate the values in our array in computing the baseline/topline quantities. However, our data attributes are heterogeneous - summing up a property of 'Block' and property of 'Assist' does not make sense. Thus, what we need to do is **apply the appropriate scale when stacking**, so that stacking is computed on a homogeneous visual range. You can realize this through the [value function](https://github.com/d3/d3-shape#stack_value).
+Note that stack will simply accumulate the values in our array in computing the baseline/topline quantities. However, our data attributes are heterogeneous - summing up a property of 'Block' and property of 'Assist' does not make sense. Thus, what we need to do is **apply the appropriate scale when stacking**, so that stacking is computed on a homogeneous visual range. You can realize this through the [value function](https://github.com/d3/d3-shape#stack_value). Specifically, `value` accepts an anonymous function with two arguments: the data (e.g. each object in your array), and a key (e.g. attribute name like 'Block', 'Assist' that you set in `keys`). The data (player) and key (attribute) will be filled in for you, and it is your responsibility to convert and return that particular player's attribute in the visual range.
 
 ## Color
 
@@ -76,7 +76,7 @@ You will then create stacked bar elements for the Points group of attributes. Th
 * The first data join will be performed on the data structure returned by `d3.stack` A group element should be created for each data item (each of the 2 attributes).
 * The second data join will simply pass along each inner array, corresponding to the array of players per property. You will create a rectangle for each data item in this array, using the band scale to compute the y position and height, and using the baseline/topline produced from stack to set the x position and width.
 
-You should also set the fill of each bar to its appropriate color, based on the specific attribute (`Block`, `Assist`, `Steal`).
+You should also set the fill of each bar to its appropriate color, based on the specific attribute (`Two_Points`, `Three_Points`).
 
 ## Stacked bars for Activities
 
@@ -84,7 +84,7 @@ You will last create stacked bar elements for the Activities group of attributes
 * The first data join will be performed on the data structure returned by `d3.stack` A group element should be created for each data item (each of the 3 attributes).
 * The second data join will simply pass along each inner array, corresponding to the array of players per property. A similar process described above will be done to position each rectangle. However, note that the bars should be positioned going from right-to-left. Thus, you must carefully consider where the x coordinate should be positioned.
 
-You should also set the fill of each bar to its appropriate color, based on the specific attribute (`Two_Points`, `Three_Points`).
+You should also set the fill of each bar to its appropriate color, based on the specific attribute (`Block`, `Assist`, `Steal`).
 
 ## Extra Credit (5 points)
 
