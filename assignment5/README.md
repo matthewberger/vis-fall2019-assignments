@@ -50,7 +50,7 @@ In your visualization, there are three basic types of interactions that you will
 
 ## Transitions
 
-Last, you will also need to support transitions: both for your line marks, and for your heatmap. Specifically, upon the specification of a new sentence, the positions of your line elements (via the path element's "d" attribute) should animate to the new data, and the colors of the heatmap should also animate. This will require separating out your `enter` `Selection` from your `update` `Selection: the update `Selection` being what is returned directly from the `data` call. You should also be sure to update the appropriate text elements (words in sentence), but you need not apply an animation to these elements.
+Last, you will also need to support transitions: both for your line marks, and for your heatmap. Specifically, upon the specification of a new sentence, the positions of your line elements (via the path element's "d" attribute) should animate to the new data, and the colors of the heatmap should also animate. This will require separating out your `enter` `Selection` from your `update` `Selection`: the update `Selection` being what is returned directly from the `data` call. You should also be sure to update the appropriate text elements (words in sentence), but you need not apply an animation to these elements.
 
 ## Design Decisions
 
