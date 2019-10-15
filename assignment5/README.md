@@ -35,7 +35,7 @@ You will be responsible for two types of visual encodings
 
 To help clarify the dot product computation, please see the following illustration for the two data structures, assuming we had 4 words, and 3-dimensional hidden state vectors:
 
-![alt text](https://github.com/matthewberger/vis-fall2019-assignments/blob/master/assignment5/dot-product.png "Dot Product")
+![alt text](https://github.com/matthewberger/vis-fall2019-assignments/blob/master/assignment5/dot-product.jpg "Dot Product")
 
 The line plot (path elements) should be added as children to a group element already created for you, with id name "lines", and the heatmap (rect elements) should be added as children to a group element already created for you, with id name "hm". Additionally, your x and y axes should be added as children to groups with ids "xaxis" and "yaxis", respectively.
 
